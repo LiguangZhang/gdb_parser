@@ -24,7 +24,7 @@ import datetime
 import copy
 import tempfile
 
-global_path = "/home/liguang/work_space/register_parser"
+global_path = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(global_path)
 import reg_parser
 import reg_class

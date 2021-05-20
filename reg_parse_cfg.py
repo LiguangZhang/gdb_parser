@@ -1,13 +1,14 @@
 import reg_class
 import re
+import os
 
 ip_dict = {}
 group_dict = {}
 unit_list = []
-reg_info = reg_class.REG(ip_dict, group_dict, unit_list)
 IP_NAME = ""
 GROUP_NAME = ""
-global_path = "/home/liguang/work_space/register_parser/"
+reg_info = reg_class.REG(ip_dict, group_dict, unit_list)
+global_path = os.path.dirname(os.path.abspath(__file__))
 
 def parse_ip(u_list):
     global IP_NAME
@@ -65,9 +66,14 @@ def parse_line(line):
         parse_base_unit(u_list)
 
 def parse_cfg():
-    print("parse_cfg", global_path+"cfg/reg.cfg")
+    global ip_dict, group_dict, unit_list, reg_info
+    ip_dict.clear()
+    group_dict.clear()
+    unit_list[:] = []
+    cfg_path = os.path.join(global_path, 'cfg/reg.cfg')
+    print("parse_cfg", cfg_path)
     global IP_NAME, GROUP_NAME
-    with open(global_path+"cfg/reg.cfg", "r") as f:
+    with open(cfg_path, "r") as f:
         for l in f.readlines():
             l = l.lstrip(" ").lstrip("\t").rstrip("\n")
             if(len(l) == 0):
