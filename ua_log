@@ -1,0 +1,365 @@
+(gdb) rdip DMA
+name              addr         offset    value         group_name    group_offset    
+--------------------------------------------------------------------------------------
+sar               0x82f00000    0:31      0x82d00010    sar0          0x0             
+--------------------------------------------------------------------------------------
+sar               0x82f00058    0:31      0x0           sar1          0x58            
+--------------------------------------------------------------------------------------
+sar               0x82f000b0    0:31      0x0           sar2          0xb0            
+--------------------------------------------------------------------------------------
+sar               0x82f00108    0:31      0x0           sar3          0x108           
+--------------------------------------------------------------------------------------
+sar               0x82f00160    0:31      0x0           sar4          0x160           
+--------------------------------------------------------------------------------------
+sar               0x82f001b8    0:31      0x0           sar5          0x1b8           
+--------------------------------------------------------------------------------------
+sar               0x82f00210    0:31      0x0           sar6          0x210           
+--------------------------------------------------------------------------------------
+sar               0x82f00268    0:31      0x0           sar7          0x268           
+--------------------------------------------------------------------------------------
+dar               0x82f00008    0:31      0x82a11840    dar0          0x8             
+--------------------------------------------------------------------------------------
+dar               0x82f00060    0:31      0x0           dar1          0x60            
+--------------------------------------------------------------------------------------
+dar               0x82f000b8    0:31      0x0           dar2          0xb8            
+--------------------------------------------------------------------------------------
+dar               0x82f00110    0:31      0x0           dar3          0x110           
+--------------------------------------------------------------------------------------
+dar               0x82f00168    0:31      0x0           dar4          0x168           
+--------------------------------------------------------------------------------------
+dar               0x82f001c0    0:31      0x0           dar5          0x1c0           
+--------------------------------------------------------------------------------------
+dar               0x82f00218    0:31      0x0           dar6          0x218           
+--------------------------------------------------------------------------------------
+dar               0x82f00270    0:31      0x0           dar7          0x270           
+--------------------------------------------------------------------------------------
+int_en            0x82f00018    0:0       b '0'         ctl0          0x18            
+dst_tr_width      0x82f00018    1:3       b '10'        ctl0          0x18            
+src_tr_width      0x82f00018    4:6       b '10'        ctl0          0x18            
+dinc              0x82f00018    7:8       b '0'         ctl0          0x18            
+sinc              0x82f00018    9:10      b '10'        ctl0          0x18            
+dest_msize        0x82f00018    11:13     1             ctl0          0x18            
+src_msize         0x82f00018    14:16     1             ctl0          0x18            
+src_gather_en     0x82f00018    17:17     b '0'         ctl0          0x18            
+dst_scatter_en    0x82f00018    18:18     b '0'         ctl0          0x18            
+tt_fc             0x82f00018    20:22     b '10'        ctl0          0x18            
+dms               0x82f00018    23:24     b '0'         ctl0          0x18            
+sms               0x82f00018    25:26     b '0'         ctl0          0x18            
+llp_dst_en        0x82f00018    27:27     b '1'         ctl0          0x18            
+llp_src_en        0x82f00018    28:28     b '1'         ctl0          0x18            
+block_ts          0x82f0001c    32:43     104           ctl0          0x18            
+done              0x82f0001c    44:44     b '0'         ctl0          0x18            
+--------------------------------------------------------------------------------------
+int_en            0x82f00070    0:0       b '1'         ctl1          0x70            
+dst_tr_width      0x82f00070    1:3       b '0'         ctl1          0x70            
+src_tr_width      0x82f00070    4:6       b '0'         ctl1          0x70            
+dinc              0x82f00070    7:8       b '0'         ctl1          0x70            
+sinc              0x82f00070    9:10      b '0'         ctl1          0x70            
+dest_msize        0x82f00070    11:13     1             ctl1          0x70            
+src_msize         0x82f00070    14:16     1             ctl1          0x70            
+src_gather_en     0x82f00070    17:17     b '0'         ctl1          0x70            
+dst_scatter_en    0x82f00070    18:18     b '0'         ctl1          0x70            
+tt_fc             0x82f00070    20:22     b '11'        ctl1          0x70            
+dms               0x82f00070    23:24     b '0'         ctl1          0x70            
+sms               0x82f00070    25:26     b '0'         ctl1          0x70            
+llp_dst_en        0x82f00070    27:27     b '0'         ctl1          0x70            
+llp_src_en        0x82f00070    28:28     b '0'         ctl1          0x70            
+block_ts          0x82f00074    32:43     2             ctl1          0x70            
+done              0x82f00074    44:44     b '0'         ctl1          0x70            
+--------------------------------------------------------------------------------------
+int_en            0x82f000c8    0:0       b '1'         ctl2          0xc8            
+dst_tr_width      0x82f000c8    1:3       b '0'         ctl2          0xc8            
+src_tr_width      0x82f000c8    4:6       b '0'         ctl2          0xc8            
+dinc              0x82f000c8    7:8       b '0'         ctl2          0xc8            
+sinc              0x82f000c8    9:10      b '0'         ctl2          0xc8            
+dest_msize        0x82f000c8    11:13     1             ctl2          0xc8            
+src_msize         0x82f000c8    14:16     1             ctl2          0xc8            
+src_gather_en     0x82f000c8    17:17     b '0'         ctl2          0xc8            
+dst_scatter_en    0x82f000c8    18:18     b '0'         ctl2          0xc8            
+tt_fc             0x82f000c8    20:22     b '11'        ctl2          0xc8            
+dms               0x82f000c8    23:24     b '0'         ctl2          0xc8            
+sms               0x82f000c8    25:26     b '0'         ctl2          0xc8            
+llp_dst_en        0x82f000c8    27:27     b '0'         ctl2          0xc8            
+llp_src_en        0x82f000c8    28:28     b '0'         ctl2          0xc8            
+block_ts          0x82f000cc    32:43     2             ctl2          0xc8            
+done              0x82f000cc    44:44     b '0'         ctl2          0xc8            
+--------------------------------------------------------------------------------------
+int_en            0x82f00120    0:0       b '1'         ctl3          0x120           
+dst_tr_width      0x82f00120    1:3       b '0'         ctl3          0x120           
+src_tr_width      0x82f00120    4:6       b '0'         ctl3          0x120           
+dinc              0x82f00120    7:8       b '0'         ctl3          0x120           
+sinc              0x82f00120    9:10      b '0'         ctl3          0x120           
+dest_msize        0x82f00120    11:13     1             ctl3          0x120           
+src_msize         0x82f00120    14:16     1             ctl3          0x120           
+src_gather_en     0x82f00120    17:17     b '0'         ctl3          0x120           
+dst_scatter_en    0x82f00120    18:18     b '0'         ctl3          0x120           
+tt_fc             0x82f00120    20:22     b '11'        ctl3          0x120           
+dms               0x82f00120    23:24     b '0'         ctl3          0x120           
+sms               0x82f00120    25:26     b '0'         ctl3          0x120           
+llp_dst_en        0x82f00120    27:27     b '0'         ctl3          0x120           
+llp_src_en        0x82f00120    28:28     b '0'         ctl3          0x120           
+block_ts          0x82f00124    32:43     2             ctl3          0x120           
+done              0x82f00124    44:44     b '0'         ctl3          0x120           
+--------------------------------------------------------------------------------------
+int_en            0x82f00178    0:0       b '1'         ctl4          0x178           
+dst_tr_width      0x82f00178    1:3       b '0'         ctl4          0x178           
+src_tr_width      0x82f00178    4:6       b '0'         ctl4          0x178           
+dinc              0x82f00178    7:8       b '0'         ctl4          0x178           
+sinc              0x82f00178    9:10      b '0'         ctl4          0x178           
+dest_msize        0x82f00178    11:13     1             ctl4          0x178           
+src_msize         0x82f00178    14:16     1             ctl4          0x178           
+src_gather_en     0x82f00178    17:17     b '0'         ctl4          0x178           
+dst_scatter_en    0x82f00178    18:18     b '0'         ctl4          0x178           
+tt_fc             0x82f00178    20:22     b '11'        ctl4          0x178           
+dms               0x82f00178    23:24     b '0'         ctl4          0x178           
+sms               0x82f00178    25:26     b '0'         ctl4          0x178           
+llp_dst_en        0x82f00178    27:27     b '0'         ctl4          0x178           
+llp_src_en        0x82f00178    28:28     b '0'         ctl4          0x178           
+block_ts          0x82f0017c    32:43     2             ctl4          0x178           
+done              0x82f0017c    44:44     b '0'         ctl4          0x178           
+--------------------------------------------------------------------------------------
+int_en            0x82f001d0    0:0       b '1'         ctl5          0x1d0           
+dst_tr_width      0x82f001d0    1:3       b '0'         ctl5          0x1d0           
+src_tr_width      0x82f001d0    4:6       b '0'         ctl5          0x1d0           
+dinc              0x82f001d0    7:8       b '0'         ctl5          0x1d0           
+sinc              0x82f001d0    9:10      b '0'         ctl5          0x1d0           
+dest_msize        0x82f001d0    11:13     1             ctl5          0x1d0           
+src_msize         0x82f001d0    14:16     1             ctl5          0x1d0           
+src_gather_en     0x82f001d0    17:17     b '0'         ctl5          0x1d0           
+dst_scatter_en    0x82f001d0    18:18     b '0'         ctl5          0x1d0           
+tt_fc             0x82f001d0    20:22     b '11'        ctl5          0x1d0           
+dms               0x82f001d0    23:24     b '0'         ctl5          0x1d0           
+sms               0x82f001d0    25:26     b '0'         ctl5          0x1d0           
+llp_dst_en        0x82f001d0    27:27     b '0'         ctl5          0x1d0           
+llp_src_en        0x82f001d0    28:28     b '0'         ctl5          0x1d0           
+block_ts          0x82f001d4    32:43     2             ctl5          0x1d0           
+done              0x82f001d4    44:44     b '0'         ctl5          0x1d0           
+--------------------------------------------------------------------------------------
+int_en            0x82f00228    0:0       b '1'         ctl6          0x228           
+dst_tr_width      0x82f00228    1:3       b '0'         ctl6          0x228           
+src_tr_width      0x82f00228    4:6       b '0'         ctl6          0x228           
+dinc              0x82f00228    7:8       b '0'         ctl6          0x228           
+sinc              0x82f00228    9:10      b '0'         ctl6          0x228           
+dest_msize        0x82f00228    11:13     1             ctl6          0x228           
+src_msize         0x82f00228    14:16     1             ctl6          0x228           
+src_gather_en     0x82f00228    17:17     b '0'         ctl6          0x228           
+dst_scatter_en    0x82f00228    18:18     b '0'         ctl6          0x228           
+tt_fc             0x82f00228    20:22     b '11'        ctl6          0x228           
+dms               0x82f00228    23:24     b '0'         ctl6          0x228           
+sms               0x82f00228    25:26     b '0'         ctl6          0x228           
+llp_dst_en        0x82f00228    27:27     b '0'         ctl6          0x228           
+llp_src_en        0x82f00228    28:28     b '0'         ctl6          0x228           
+block_ts          0x82f0022c    32:43     2             ctl6          0x228           
+done              0x82f0022c    44:44     b '0'         ctl6          0x228           
+--------------------------------------------------------------------------------------
+int_en            0x82f00280    0:0       b '1'         ctl7          0x280           
+dst_tr_width      0x82f00280    1:3       b '0'         ctl7          0x280           
+src_tr_width      0x82f00280    4:6       b '0'         ctl7          0x280           
+dinc              0x82f00280    7:8       b '0'         ctl7          0x280           
+sinc              0x82f00280    9:10      b '0'         ctl7          0x280           
+dest_msize        0x82f00280    11:13     1             ctl7          0x280           
+src_msize         0x82f00280    14:16     1             ctl7          0x280           
+src_gather_en     0x82f00280    17:17     b '0'         ctl7          0x280           
+dst_scatter_en    0x82f00280    18:18     b '0'         ctl7          0x280           
+tt_fc             0x82f00280    20:22     b '11'        ctl7          0x280           
+dms               0x82f00280    23:24     b '0'         ctl7          0x280           
+sms               0x82f00280    25:26     b '0'         ctl7          0x280           
+llp_dst_en        0x82f00280    27:27     b '0'         ctl7          0x280           
+llp_src_en        0x82f00280    28:28     b '0'         ctl7          0x280           
+block_ts          0x82f00284    32:43     2             ctl7          0x280           
+done              0x82f00284    44:44     b '0'         ctl7          0x280           
+--------------------------------------------------------------------------------------
+ch_prior          0x82f00040    5:7       0             cfg0          0x40            
+ch_susp           0x82f00040    8:8       0             cfg0          0x40            
+fifo_empty        0x82f00040    9:9       0             cfg0          0x40            
+hs_sel_dst        0x82f00040    10:10     0             cfg0          0x40            
+hs_sel_src        0x82f00040    11:11     0             cfg0          0x40            
+dst_hs_pol        0x82f00040    18:18     0             cfg0          0x40            
+src_hs_pol        0x82f00040    19:19     0             cfg0          0x40            
+max_abrst         0x82f00040    20:29     b '0'         cfg0          0x40            
+reload_src        0x82f00040    30:30     0             cfg0          0x40            
+reload_dst        0x82f00040    31:31     0             cfg0          0x40            
+fcmode            0x82f00044    32:32     0             cfg0          0x40            
+fifo_mode         0x82f00044    33:33     1             cfg0          0x40            
+protctl           0x82f00044    34:36     1             cfg0          0x40            
+src_per           0x82f00044    39:42     2             cfg0          0x40            
+dest_per          0x82f00044    43:46     0             cfg0          0x40            
+--------------------------------------------------------------------------------------
+ch_prior          0x82f00098    5:7       1             cfg1          0x98            
+ch_susp           0x82f00098    8:8       0             cfg1          0x98            
+fifo_empty        0x82f00098    9:9       1             cfg1          0x98            
+hs_sel_dst        0x82f00098    10:10     1             cfg1          0x98            
+hs_sel_src        0x82f00098    11:11     1             cfg1          0x98            
+dst_hs_pol        0x82f00098    18:18     0             cfg1          0x98            
+src_hs_pol        0x82f00098    19:19     0             cfg1          0x98            
+max_abrst         0x82f00098    20:29     b '0'         cfg1          0x98            
+reload_src        0x82f00098    30:30     0             cfg1          0x98            
+reload_dst        0x82f00098    31:31     0             cfg1          0x98            
+fcmode            0x82f0009c    32:32     0             cfg1          0x98            
+fifo_mode         0x82f0009c    33:33     0             cfg1          0x98            
+protctl           0x82f0009c    34:36     1             cfg1          0x98            
+src_per           0x82f0009c    39:42     0             cfg1          0x98            
+dest_per          0x82f0009c    43:46     0             cfg1          0x98            
+--------------------------------------------------------------------------------------
+ch_prior          0x82f000f0    5:7       2             cfg2          0xf0            
+ch_susp           0x82f000f0    8:8       0             cfg2          0xf0            
+fifo_empty        0x82f000f0    9:9       1             cfg2          0xf0            
+hs_sel_dst        0x82f000f0    10:10     1             cfg2          0xf0            
+hs_sel_src        0x82f000f0    11:11     1             cfg2          0xf0            
+dst_hs_pol        0x82f000f0    18:18     0             cfg2          0xf0            
+src_hs_pol        0x82f000f0    19:19     0             cfg2          0xf0            
+max_abrst         0x82f000f0    20:29     b '0'         cfg2          0xf0            
+reload_src        0x82f000f0    30:30     0             cfg2          0xf0            
+reload_dst        0x82f000f0    31:31     0             cfg2          0xf0            
+fcmode            0x82f000f4    32:32     0             cfg2          0xf0            
+fifo_mode         0x82f000f4    33:33     0             cfg2          0xf0            
+protctl           0x82f000f4    34:36     1             cfg2          0xf0            
+src_per           0x82f000f4    39:42     0             cfg2          0xf0            
+dest_per          0x82f000f4    43:46     0             cfg2          0xf0            
+--------------------------------------------------------------------------------------
+ch_prior          0x82f00148    5:7       3             cfg3          0x148           
+ch_susp           0x82f00148    8:8       0             cfg3          0x148           
+fifo_empty        0x82f00148    9:9       1             cfg3          0x148           
+hs_sel_dst        0x82f00148    10:10     1             cfg3          0x148           
+hs_sel_src        0x82f00148    11:11     1             cfg3          0x148           
+dst_hs_pol        0x82f00148    18:18     0             cfg3          0x148           
+src_hs_pol        0x82f00148    19:19     0             cfg3          0x148           
+max_abrst         0x82f00148    20:29     b '0'         cfg3          0x148           
+reload_src        0x82f00148    30:30     0             cfg3          0x148           
+reload_dst        0x82f00148    31:31     0             cfg3          0x148           
+fcmode            0x82f0014c    32:32     0             cfg3          0x148           
+fifo_mode         0x82f0014c    33:33     0             cfg3          0x148           
+protctl           0x82f0014c    34:36     1             cfg3          0x148           
+src_per           0x82f0014c    39:42     0             cfg3          0x148           
+dest_per          0x82f0014c    43:46     0             cfg3          0x148           
+--------------------------------------------------------------------------------------
+ch_prior          0x82f001a0    5:7       4             cfg4          0x1a0           
+ch_susp           0x82f001a0    8:8       0             cfg4          0x1a0           
+fifo_empty        0x82f001a0    9:9       1             cfg4          0x1a0           
+hs_sel_dst        0x82f001a0    10:10     1             cfg4          0x1a0           
+hs_sel_src        0x82f001a0    11:11     1             cfg4          0x1a0           
+dst_hs_pol        0x82f001a0    18:18     0             cfg4          0x1a0           
+src_hs_pol        0x82f001a0    19:19     0             cfg4          0x1a0           
+max_abrst         0x82f001a0    20:29     b '0'         cfg4          0x1a0           
+reload_src        0x82f001a0    30:30     0             cfg4          0x1a0           
+reload_dst        0x82f001a0    31:31     0             cfg4          0x1a0           
+fcmode            0x82f001a4    32:32     0             cfg4          0x1a0           
+fifo_mode         0x82f001a4    33:33     0             cfg4          0x1a0           
+protctl           0x82f001a4    34:36     1             cfg4          0x1a0           
+src_per           0x82f001a4    39:42     0             cfg4          0x1a0           
+dest_per          0x82f001a4    43:46     0             cfg4          0x1a0           
+--------------------------------------------------------------------------------------
+ch_prior          0x82f001f8    5:7       5             cfg5          0x1f8           
+ch_susp           0x82f001f8    8:8       0             cfg5          0x1f8           
+fifo_empty        0x82f001f8    9:9       1             cfg5          0x1f8           
+hs_sel_dst        0x82f001f8    10:10     1             cfg5          0x1f8           
+hs_sel_src        0x82f001f8    11:11     1             cfg5          0x1f8           
+dst_hs_pol        0x82f001f8    18:18     0             cfg5          0x1f8           
+src_hs_pol        0x82f001f8    19:19     0             cfg5          0x1f8           
+max_abrst         0x82f001f8    20:29     b '0'         cfg5          0x1f8           
+reload_src        0x82f001f8    30:30     0             cfg5          0x1f8           
+reload_dst        0x82f001f8    31:31     0             cfg5          0x1f8           
+fcmode            0x82f001fc    32:32     0             cfg5          0x1f8           
+fifo_mode         0x82f001fc    33:33     0             cfg5          0x1f8           
+protctl           0x82f001fc    34:36     1             cfg5          0x1f8           
+src_per           0x82f001fc    39:42     0             cfg5          0x1f8           
+dest_per          0x82f001fc    43:46     0             cfg5          0x1f8           
+--------------------------------------------------------------------------------------
+ch_prior          0x82f00250    5:7       6             cfg6          0x250           
+ch_susp           0x82f00250    8:8       0             cfg6          0x250           
+fifo_empty        0x82f00250    9:9       1             cfg6          0x250           
+hs_sel_dst        0x82f00250    10:10     1             cfg6          0x250           
+hs_sel_src        0x82f00250    11:11     1             cfg6          0x250           
+dst_hs_pol        0x82f00250    18:18     0             cfg6          0x250           
+src_hs_pol        0x82f00250    19:19     0             cfg6          0x250           
+max_abrst         0x82f00250    20:29     b '0'         cfg6          0x250           
+reload_src        0x82f00250    30:30     0             cfg6          0x250           
+reload_dst        0x82f00250    31:31     0             cfg6          0x250           
+fcmode            0x82f00254    32:32     0             cfg6          0x250           
+fifo_mode         0x82f00254    33:33     0             cfg6          0x250           
+protctl           0x82f00254    34:36     1             cfg6          0x250           
+src_per           0x82f00254    39:42     0             cfg6          0x250           
+dest_per          0x82f00254    43:46     0             cfg6          0x250           
+--------------------------------------------------------------------------------------
+ch_prior          0x82f002a8    5:7       7             cfg7          0x2a8           
+ch_susp           0x82f002a8    8:8       0             cfg7          0x2a8           
+fifo_empty        0x82f002a8    9:9       1             cfg7          0x2a8           
+hs_sel_dst        0x82f002a8    10:10     1             cfg7          0x2a8           
+hs_sel_src        0x82f002a8    11:11     1             cfg7          0x2a8           
+dst_hs_pol        0x82f002a8    18:18     0             cfg7          0x2a8           
+src_hs_pol        0x82f002a8    19:19     0             cfg7          0x2a8           
+max_abrst         0x82f002a8    20:29     b '0'         cfg7          0x2a8           
+reload_src        0x82f002a8    30:30     0             cfg7          0x2a8           
+reload_dst        0x82f002a8    31:31     0             cfg7          0x2a8           
+fcmode            0x82f002ac    32:32     0             cfg7          0x2a8           
+fifo_mode         0x82f002ac    33:33     0             cfg7          0x2a8           
+protctl           0x82f002ac    34:36     1             cfg7          0x2a8           
+src_per           0x82f002ac    39:42     0             cfg7          0x2a8           
+dest_per          0x82f002ac    43:46     0             cfg7          0x2a8           
+--------------------------------------------------------------------------------------
+dma_en            0x82f00398    0:0       b '1'         dmacfgreg     0x398           
+--------------------------------------------------------------------------------------
+ch_en             0x82f003a0    0:7       b '1'         chenreg       0x3A0           
+ch_en_we          0x82f003a0    8:15      b '0'         chenreg       0x3A0           
+--------------------------------------------------------------------------------------
+dma_id            0x82f003a8    0:31      0x0           dmaidreg      0x3A8           
+--------------------------------------------------------------------------------------
+src_req           0x82f00368    0:7       b '0'         reqsrcreg     0x368           
+src_req_we        0x82f00368    8:15      b '0'         reqsrcreg     0x368           
+--------------------------------------------------------------------------------------
+dst_req           0x82f00370    0:7       b '0'         reqdstreg     0x370           
+dst_req_we        0x82f00370    8:15      b '0'         reqdstreg     0x370           
+--------------------------------------------------------------------------------------
+tfr               0x82f00360    0:0       b '0'         statusint     0x360           
+block             0x82f00360    1:1       b '0'         statusint     0x360           
+srct              0x82f00360    2:2       b '0'         statusint     0x360           
+dstt              0x82f00360    3:3       b '0'         statusint     0x360           
+err               0x82f00360    4:4       b '0'         statusint     0x360           
+
+
+(gdb) rdip AHB_SUBSYS
+name                         addr          offset    value     group_name           group_offset    
+----------------------------------------------------------------------------------------------------
+hprot_usb1                   0x97d02004    4:6       b '1'     usb_hprot_control    0x4             
+hprot_usb0                   0x97d02004    0:2       b '1'     usb_hprot_control    0x4             
+----------------------------------------------------------------------------------------------------
+qspi1_tx_dma_sel             0x97d02008    0:1       b '0'     ahb_s_dma_h_s_0      0x8             
+qspi1_tx_dma_handshake_cn    0x97d02008    4:7       0         ahb_s_dma_h_s_0      0x8             
+qspi1_rx_dma_sel             0x97d02008    8:9       b '0'     ahb_s_dma_h_s_0      0x8             
+qspi1_rx_dma_handshake_cn    0x97d02008    12:15     1         ahb_s_dma_h_s_0      0x8             
+uart1_tx_dma_sel             0x97d02008    16:17     b '0'     ahb_s_dma_h_s_0      0x8             
+uart1_tx_dma_handshake_cn    0x97d02008    20:23     0         ahb_s_dma_h_s_0      0x8             
+uart1_rx_dma_sel             0x97d02008    24:25     b '0'     ahb_s_dma_h_s_0      0x8             
+uart1_rx_dma_handshake_cn    0x97d02008    28:31     1         ahb_s_dma_h_s_0      0x8             
+----------------------------------------------------------------------------------------------------
+aes_tx_dma_sel               0x97d0200c    0:1       b '0'     ahb_s_dma_h_s_1      0xc             
+aes_tx_handshake_cn          0x97d0200c    4:7       4         ahb_s_dma_h_s_1      0xc             
+aes_rx_dma_sel               0x97d0200c    8:9       b '0'     ahb_s_dma_h_s_1      0xc             
+aes_rx_handshake_cn          0x97d0200c    12:15     5         ahb_s_dma_h_s_1      0xc             
+i2c0_tx_dma_sel              0x97d0200c    16:17     b '10'    ahb_s_dma_h_s_1      0xc             
+i2c0_tx_dma_handshake_cn     0x97d0200c    20:23     6         ahb_s_dma_h_s_1      0xc             
+i2c0_rx_dma_sel              0x97d0200c    24:25     b '0'     ahb_s_dma_h_s_1      0xc             
+i2c0_rx_dma_handshake_cn     0x97d0200c    28:31     7         ahb_s_dma_h_s_1      0xc             
+----------------------------------------------------------------------------------------------------
+spi1_tx_dma_sel              0x97d02010    0:1       b '1'     ahb_s_dma_h_s_2      0x10            
+spi1_tx_dma_handshake_cn     0x97d02010    4:7       4         ahb_s_dma_h_s_2      0x10            
+spi1_rx_dma_sel              0x97d02010    8:9       b '1'     ahb_s_dma_h_s_2      0x10            
+spi1_rx_dma_handshake_cn     0x97d02010    12:15     5         ahb_s_dma_h_s_2      0x10            
+i2c1_tx_dma_sel              0x97d02010    16:17     b '1'     ahb_s_dma_h_s_2      0x10            
+i2c1_tx_dma_handshake_cn     0x97d02010    20:23     6         ahb_s_dma_h_s_2      0x10            
+i2c1_rx_dma_sel              0x97d02010    24:25     b '1'     ahb_s_dma_h_s_2      0x10            
+i2c1_rx_dma_handshake_cn     0x97d02010    28:31     7         ahb_s_dma_h_s_2      0x10            
+----------------------------------------------------------------------------------------------------
+uart2_tx_dma_selection       0x97d02014    0:1       b '1'     ahb_s_dma_h_s_3      0x14            
+uart2_tx_dma_handshake_cn    0x97d02014    4:7       0         ahb_s_dma_h_s_3      0x14            
+uart2_rx_dma_selection       0x97d02014    8:9       b '1'     ahb_s_dma_h_s_3      0x14            
+uart2_rx_dma_handshake_cn    0x97d02014    12:15     1         ahb_s_dma_h_s_3      0x14            
+spi0_tx_dma_sel              0x97d02014    16:17     b '10'    ahb_s_dma_h_s_3      0x14            
+spi0_tx_dma_handshake_cn     0x97d02014    20:23     2         ahb_s_dma_h_s_3      0x14            
+spi0_rx_dma_sel              0x97d02014    24:25     b '10'    ahb_s_dma_h_s_3      0x14            
+spi0_rx_dma_handshake_cn     0x97d02014    28:31     3         ahb_s_dma_h_s_3      0x14            
+----------------------------------------------------------------------------------------------------
+sha_in_dma_selection         0x97d02018    16:17     b '0'     ahb_s_dma_h_s_4      0x18            
+sha_in__dma_handshake_cn     0x97d02018    20:23     6         ahb_s_dma_h_s_4      0x18            
+sha_adc_dma_selection        0x97d02018    24:25     b '10'    ahb_s_dma_h_s_4      0x18            
+sha_adc_dma_handshake_cn     0x97d02018    28:31     7         ahb_s_dma_h_s_4      0x18  

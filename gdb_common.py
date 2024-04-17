@@ -37,10 +37,13 @@ def arch_dword_size():
     if "dword_size" in cache_d:
         return cache_d["dword_size"]
     abi = gdb.selected_frame().architecture().name()
+    # print(abi)
     cache_d["dword_size"] = 8
     if abi is "aarch64":
         cache_d["dword_size"] = 8
     elif abi is "arm":
+        cache_d["dword_size"] = 4
+    elif abi.find("32") != -1:
         cache_d["dword_size"] = 4
     return cache_d["dword_size"]
 
@@ -64,11 +67,12 @@ def type_size(type_name):
 
 
 def get_value(symbol):
-    global cache_d
+    return gdb.parse_and_eval(symbol)
+    # global cache_d
 
-    if symbol not in cache_d["values"]:
-        cache_d["values"][symbol] = gdb.parse_and_eval(symbol)
-    return cache_d["values"][symbol]
+    # if symbol not in cache_d["values"]:
+    #     cache_d["values"][symbol] = gdb.parse_and_eval(symbol)
+    # return cache_d["values"][symbol]
 
 
 def read_memory(addr, size):
@@ -93,6 +97,9 @@ def dword_in_buf(buf, off=0):
 
 def clear_cache():
     cache_d.clear()
+    cache_d["offsets"] = {}
+    cache_d["sizes"] = {}
+    cache_d["values"] = {}
 
 def read_addr_width(addr, off, width):
     if cache_d.has_key(addr):

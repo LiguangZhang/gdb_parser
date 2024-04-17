@@ -65,12 +65,15 @@ def parse_line(line):
         #print("parse_unit")
         parse_base_unit(u_list)
 
-def parse_cfg():
+def parse_cfg(m=True):
     global ip_dict, group_dict, unit_list, reg_info
     ip_dict.clear()
     group_dict.clear()
     unit_list[:] = []
-    cfg_path = os.path.join(global_path, 'cfg/reg.cfg')
+    if m:
+        cfg_path = os.path.join(global_path, 'cfg/mreg.cfg')
+    else:
+        cfg_path = os.path.join(global_path, 'cfg/ireg.cfg')
     print("parse_cfg", cfg_path)
     global IP_NAME, GROUP_NAME
     with open(cfg_path, "r") as f:

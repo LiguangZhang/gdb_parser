@@ -27,6 +27,8 @@ import tempfile
 global_path = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(global_path)
 import reg_parser
+import freertos_parser
+import freertos_class
 import reg_class
 
 class reg_help(gdb.Command):
@@ -68,9 +70,80 @@ class reg_dump_ip_all(gdb.Command):
         except Exception as e:
             traceback.print_exc()
 
+class dump_memory(gdb.Command):
+    def __init__(self):
+        gdb.Command.__init__(self, 'dm', gdb.COMMAND_OBSCURE)
+        self.proc = gdb.inferiors()[0]
+
+    def invoke(self, arg, from_tty):
+        try:
+            reg_parser.dump_memory(arg)
+        except Exception as e:
+            traceback.print_exc()
+
+class dump_all_task(gdb.Command):
+    def __init__(self):
+        gdb.Command.__init__(self, 'dta', gdb.COMMAND_OBSCURE)
+        self.proc = gdb.inferiors()[0]
+
+    def invoke(self, arg, from_tty):
+        try:
+            freertos_parser.dump_tasks()
+        except Exception as e:
+            traceback.print_exc()
+
+class dump_task_stack(gdb.Command):
+    def __init__(self):
+        gdb.Command.__init__(self, 'ds', gdb.COMMAND_OBSCURE)
+        self.proc = gdb.inferiors()[0]
+
+    def invoke(self, arg, from_tty):
+        try:
+            freertos_parser.dump_task_stack(arg)
+        except Exception as e:
+            traceback.print_exc()
+
+class dump_all_task_clear_cache(gdb.Command):
+    def __init__(self):
+        gdb.Command.__init__(self, 'dtc', gdb.COMMAND_OBSCURE)
+        self.proc = gdb.inferiors()[0]
+
+    def invoke(self, arg, from_tty):
+        try:
+            freertos_parser.dump_tasks_clear_cache()
+        except Exception as e:
+            traceback.print_exc()
+
+class dump_task(gdb.Command):
+    def __init__(self):
+        gdb.Command.__init__(self, 'dt', gdb.COMMAND_OBSCURE)
+        self.proc = gdb.inferiors()[0]
+
+    def invoke(self, arg, from_tty):
+        try:
+            freertos_parser.dump_task(arg)
+        except Exception as e:
+            traceback.print_exc()
+
+class dump_list(gdb.Command):
+    def __init__(self):
+        gdb.Command.__init__(self, 'dl', gdb.COMMAND_OBSCURE)
+        self.proc = gdb.inferiors()[0]
+
+    def invoke(self, arg, from_tty):
+        try:
+            freertos_parser.dump_list(arg)
+        except Exception as e:
+            traceback.print_exc()
+
 reg_help()
 reg_version()
 reg_dump_ip()
 reg_dump_ip_all()
-
+dump_all_task()
+dump_task()
+dump_all_task_clear_cache()
+dump_task_stack()
+dump_list()
+dump_memory()
 reg_parser.parse_cfg()

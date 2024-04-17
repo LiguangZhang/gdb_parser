@@ -67,3 +67,17 @@ def dump_ip(arg):
 def dump_ip_all():
     tofile = "/home/liguang/gdb_temp.log"
     dump_info(None, None, tofile)
+
+def dump_memory(arg):
+    arg_list = arg.split(" ")
+    start_addr = int(arg_list[0], 16)
+    length = int(arg_list[1], 16)
+    print(start_addr, length)
+    end_addr = start_addr + length
+    tmp_addr = start_addr
+    while tmp_addr < end_addr:
+        print("tmp_addr {}".format(hex(tmp_addr)))
+        dump_var = "dump binary memory dump_test/dump_{} {} {}".format(hex(tmp_addr), hex(tmp_addr), hex(tmp_addr+0x200))
+        print(dump_var)
+        gdb.execute(dump_var)
+        tmp_addr = tmp_addr + 0x200
